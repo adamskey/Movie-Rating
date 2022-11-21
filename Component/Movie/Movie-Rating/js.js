@@ -7,6 +7,7 @@ function ratingOnClick(element) {
     document.getElementById("result").innerHTML = "You rated " + n + " star";
     ratedStars = n;
 }
+
 function lightAllStarsUpTo(n) {
     for (i = 1; i <= n; i++) {
         document.getElementById(i).src = "star.png";
@@ -25,7 +26,7 @@ function unhover() {
 }
 
 function resetStars() {
-    
+
     for (i = 1; i < 6; i++)
         document.getElementById(i).src = "star-gray.png";
         document.getElementById("result").innerHTML = " Please rate the movie.";
