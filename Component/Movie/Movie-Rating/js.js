@@ -25,6 +25,7 @@ function unhover() {
 }
 
 function resetStars() {
+    
     for (i = 1; i < 6; i++)
         document.getElementById(i).src = "star-gray.png";
         document.getElementById("result").innerHTML = " Please rate the movie.";
