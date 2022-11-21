@@ -15,14 +15,14 @@
             <h1>Movie</h1>
             <img class="poster" src="good-bad-ugly.jpg">
             <div class="rating">
-                <img id="1" src="star.png" onclick="ratingOnClick(this.id)" onmouseover="rated(id)">
-                <img id="2" src="star.png" onclick="ratingOnClick(this.id)">
-                <img id="3" src="star-gray.png" onclick="ratingOnClick(this.id)">
-                <img id="4" src="star-gray.png" onclick="ratingOnClick(this.id)">
-                <img id="5" src="star-gray.png" onclick="ratingOnClick(this.id)">
+                <img id="1" label="rated" src="star-gray.png" onclick="ratingOnClick(this)" onmouseover="hover(this.id)" onmouseout="unhover()">
+                <img id="2" label="rated" src="star-gray.png" onclick="ratingOnClick(this)" onmouseover="hover(this.id)" onmouseout="unhover()">
+                <img id="3" label="unrated" src="star-gray.png" onclick="ratingOnClick(this)" onmouseover="hover(this.id)" onmouseout="unhover()">
+                <img id="4" label="unrated" src="star-gray.png" onclick="ratingOnClick(this)" onmouseover="hover(this.id)" onmouseout="unhover()">
+                <img id="5" label="unrated" src="star-gray.png" onclick="ratingOnClick(this)" onmouseover="hover(this.id)" onmouseout="unhover()">
             </div>
             <div id="result" class="result" onclick="resetStars()">
-                AAAAAAA&nbsp;
+                Please rate the movie.
             </div>
 
         </div>
